@@ -2,6 +2,7 @@
 
 import { connectToDatabase } from "@/lib/db";
 import Product, { IProduct } from "@/lib/db/models/product.model";
+import { PAGE_SIZE } from "../constants";
 // import { PAGE_SIZE } from "../constants";
 
 // GET ONE PRODUCT BY ID
@@ -74,7 +75,7 @@ export async function getProductBySlug(slug: string) {
 export async function getRelatedProductsByCategory({
   category,
   productId,
-  limit = 4,
+  limit = PAGE_SIZE,
   page = 1,
 }: {
   category: string;
