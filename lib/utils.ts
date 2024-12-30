@@ -18,8 +18,8 @@ export const toSlug = (text: string): string =>
     .replace(/^-+|-+$/g, "")
     .replace(/-+/g, "-");
 
-const CURRENCY_FORMATTER = new Intl.NumberFormat("en-US", {
-  currency: "USD",
-  style: "currency",
-  minimumFractionDigits: 2,
-});
+// const CURRENCY_FORMATTER = new Intl.NumberFormat("en-US", {
+//   currency: "USD",
+//   style: "currency",
+//   minimumFractionDigits: 2,
+// });
