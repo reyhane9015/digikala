@@ -2,7 +2,6 @@ import { Data, IProductInput } from "@/types";
 import { toSlug } from "./utils";
 
 const products: IProductInput[] = [
-  // T-shirts
   {
     name: "Nike Mens Slim-fit Long-Sleeve T-Shirt",
     slug: toSlug("Nike Mens Slim-fit Long-Sleeve T-Shirt"),
@@ -28,6 +27,40 @@ const products: IProductInput[] = [
       "Made with chemicals safer for human health and the environment",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Green", "Red", "Black"],
+
+    reviews: [],
+  },
+  {
+    name: "Jerzees Long-Sleeve Heavyweight Blend T-Shirt",
+    slug: toSlug("Jerzees Long-Sleeve Heavyweight Blend T-Shirt"),
+    category: "T-Shirts",
+    images: [
+      "/images/p12-1.jpg",
+      "/images/p12-2.jpg",
+      "/images/p12-3.jpg",
+      "/images/p12-4.jpg",
+    ],
+    tags: ["featured"],
+    isPublished: true,
+    price: 23.78,
+    listPrice: 0,
+    brand: "Jerzees",
+    avgRating: 4.2,
+    numReviews: 10,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 0 },
+      { rating: 3, count: 0 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    numSales: 29,
+    countInStock: 12,
+    description:
+      "Made with sustainably sourced USA grown cotton; Shoulder-to-shoulder tape; double-needle coverstitched front neck; Set-in sleeves; Rib cuffs with concealed seams; Seamless body for a wide printing area",
+
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: ["Yellow", "Red", "Black"],
 
     reviews: [],
   },
@@ -86,6 +119,64 @@ const products: IProductInput[] = [
       "Elevate your outfit with this soft long sleeve t shirt men. This full sleeves tee is the ultimate upgrade from your regular cotton t-shirt. ",
     sizes: ["XL", "XXL"],
     colors: ["Yellow", "White"],
+
+    reviews: [],
+  },
+  {
+    name: "Muscle Cmdr Men's Slim Fit Henley Shirt Long&Short Business Sleeve Casual 3 Metal Buton Placket Casual Stylish T-Shirt",
+    slug: toSlug(
+      "Muscle Cmdr Men's Slim Fit Henley Shirt Long&Short Business Sleeve Casual 3 Metal Buton Placket Casual Stylish T-Shirt"
+    ),
+    category: "T-Shirts",
+    brand: " Muscle Cmdr",
+    images: ["/images/p15-1.jpg", "/images/p15-2.jpg"],
+    tags: ["new-arrival", "featured"],
+    isPublished: true,
+    price: 29.99,
+    listPrice: 35.99,
+    avgRating: 3.66,
+    numReviews: 15,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    numSales: 54,
+    countInStock: 15,
+    description:
+      "Slim Fit Design:Men's Muscle Slim Fit Button Henley Shirts are designed to fit snugly against your body, accentuating your muscles and creating a sleek silhouette that's perfect for any occasion. ",
+    sizes: ["XL", "XXL"],
+    colors: ["Green", "Yellow"],
+
+    reviews: [],
+  },
+  {
+    name: "Hanes Mens Long Sleeve Beefy Henley Shirt",
+    slug: toSlug("Hanes Mens Long Sleeve Beefy Henley Shirt"),
+    category: "T-Shirts",
+    brand: "Jerzees",
+    images: ["/images/p16-1.jpg", "/images/p16-2.jpg"],
+    tags: ["best-seller", "todays-deal"],
+    isPublished: true,
+    price: 25.3,
+    listPrice: 32.99,
+    avgRating: 3.46,
+    numReviews: 13,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 3 },
+    ],
+    countInStock: 16,
+    numSales: 56,
+    description:
+      "Heavyweight cotton (Heathers are 60% cotton/40% polyester; Pebblestone is 75% cotton/25% polyester)",
+    sizes: ["XL", "XXL"],
+    colors: ["Grey", "White"],
 
     reviews: [],
   },
@@ -229,6 +320,34 @@ const products: IProductInput[] = [
     numSales: 48,
     description:
       "Relaxed work jean with traditional carpenter-style pockets and logo patch at back pockets",
+    sizes: ["30Wx30L", "34Wx30L", "36Wx30L"],
+    colors: ["Blue", "Grey"],
+
+    reviews: [],
+  },
+  {
+    name: "Wrangler mens Premium Performance Cowboy Cut Slim Fit Jean",
+    slug: toSlug("Wrangler mens Premium Performance Cowboy Cut Slim Fit Jean"),
+    category: "Jeans",
+    brand: "Wrangler",
+    images: ["/images/p26-1.jpg", "/images/p26-2.jpg"],
+    tags: ["best-seller", "todays-deal"],
+    isPublished: true,
+    price: 81.78,
+    listPrice: 149.99,
+    avgRating: 3.46,
+    numReviews: 13,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 3 },
+    ],
+    countInStock: 26,
+    numSales: 48,
+    description:
+      "Designed with a functional fit in mind, these jeans are made to stack over your favorite pair of boots. Constructed with a slim fit in the waist, seat, and thigh, this jean is made for both function and comfort for long days in the saddle.",
     sizes: ["30Wx30L", "34Wx30L", "36Wx30L"],
     colors: ["Blue", "Grey"],
 
@@ -381,6 +500,34 @@ const products: IProductInput[] = [
 
     reviews: [],
   },
+  {
+    name: "Fossil Men's Machine Stainless Steel Quartz Watch",
+    slug: toSlug("Fossil Men's Machine Stainless Steel Quartz Watch"),
+    category: "Wrist Watches",
+    brand: "Fossil",
+    images: ["/images/p36-1.jpg", "/images/p36-2.jpg"],
+    tags: ["best-seller", "todays-deal"],
+    isPublished: true,
+    price: 158.21,
+    listPrice: 229.0,
+    avgRating: 3.46,
+    numReviews: 13,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 3 },
+    ],
+    countInStock: 36,
+    numSales: 49,
+    description:
+      "In masculine black-on-black, our industrial-inspired Machine watch will add a fresh, modern touch to your casual look. This Machine watch also features a three hand movement on a stainless steel bracelet.",
+    sizes: [],
+    colors: ["Brown", "Sliver", "Black"],
+
+    reviews: [],
+  },
   // Sneakers
   {
     name: "adidas Mens Grand Court 2.0 Training Shoes Training Shoes",
@@ -437,6 +584,124 @@ const products: IProductInput[] = [
       "Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh",
     sizes: ["8", "9", "10"],
     colors: ["Beige", "Black", "Grey"],
+
+    reviews: [],
+  },
+  {
+    name: "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe",
+    slug: toSlug(
+      "Skechers mens Summits High Range Hands Free Slip-in Shoes Work shoe"
+    ),
+    category: "Shoes",
+    brand: "Skechers",
+    images: ["/images/p43-1.jpg", "/images/p43-2.jpg"],
+    tags: ["best-seller"],
+    isPublished: true,
+    price: 99.99,
+    listPrice: 0,
+    avgRating: 4,
+    numReviews: 12,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 0 },
+      { rating: 3, count: 2 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    countInStock: 43,
+    numSales: 72,
+    description:
+      "Step into easy-wearing comfort with Skechers Hands Free Slip-ins™: Summits - High Range. Along with our Exclusive Heel Pillow™ holds your foot securely in place, this vegan style features a unique pop-up Skechers Slip-ins™ molded heel panel, a mesh upper with fixed laces",
+    sizes: ["8", "9", "10"],
+    colors: ["Navy", "Black", "Grey"],
+
+    reviews: [],
+  },
+  {
+    name: "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes",
+    slug: toSlug(
+      "DLWKIPV Mens Running Shoes Tennis Cross Training Sneakers Fashion Non Slip Outdoor Walking Jogging Shoes Mesh Light Flexible Comfortable Breathable Shoes"
+    ),
+    category: "Shoes",
+    brand: "DLWKIPV",
+    images: ["/images/p44-1.jpg", "/images/p44-2.jpg"],
+    tags: ["todays-deal"],
+    isPublished: true,
+    price: 36.99,
+    listPrice: 56.9,
+    avgRating: 3.85,
+    numReviews: 14,
+    ratingDistribution: [
+      { rating: 1, count: 0 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    countInStock: 44,
+    numSales: 72,
+    description:
+      "Design: Mesh vamp, ventilation. Sole anti-slip groove design, shock absorption and anti-slip. The inside of the shoe is wide and soft, bringing you a good comfortable experience",
+    sizes: ["8", "9", "10", "11", "12"],
+    colors: ["Brown", "Black", "Grey"],
+
+    reviews: [],
+  },
+  {
+    name: "ASICS Men's GT-2000 13 Running Shoes",
+    slug: toSlug("ASICS Men's GT-2000 13 Running Shoes"),
+    category: "Shoes",
+    brand: "ASICS",
+    images: ["/images/p45-1.jpg", "/images/p45-2.jpg"],
+    tags: ["new-arrival", "featured"],
+    isPublished: true,
+    price: 179.95,
+    listPrice: 200,
+    avgRating: 3.66,
+    numReviews: 15,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    countInStock: 45,
+    numSales: 64,
+    description:
+      "At least 50% of the shoe's main upper material is made with recycled content to reduce waste and carbon emissions",
+    sizes: ["8", "9", "10", "11"],
+    colors: ["Blue", "Black", "Grey"],
+
+    reviews: [],
+  },
+  {
+    name: "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes",
+    slug: toSlug(
+      "Mens Wearbreeze Shoes, Urban - Ultra Comfortable Shoes, Breeze Shoes for Men, Men's Mesh Dress Sneakers Business Shoes"
+    ),
+    category: "Shoes",
+    brand: "Generic",
+    images: ["/images/p46-1.jpg", "/images/p46-2.jpg"],
+    tags: ["best-seller", "todays-deal"],
+    isPublished: true,
+    price: 32.99,
+    listPrice: 80,
+    avgRating: 3.46,
+    numReviews: 13,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 3 },
+    ],
+    countInStock: 46,
+    numSales: 48,
+    description:
+      "Cloudfoam Comfort sockliner is ultra-soft and plush, with two layers of cushioning topped with soft, breathable mesh",
+    sizes: ["8", "9", "10", "11"],
+    colors: ["Green", "Black", "Grey"],
 
     reviews: [],
   },
