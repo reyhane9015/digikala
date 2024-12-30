@@ -2,6 +2,7 @@ import { Data, IProductInput } from "@/types";
 import { toSlug } from "./utils";
 
 const products: IProductInput[] = [
+  // T-shirts
   {
     name: "Nike Mens Slim-fit Long-Sleeve T-Shirt",
     slug: toSlug("Nike Mens Slim-fit Long-Sleeve T-Shirt"),
